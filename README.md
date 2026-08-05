@@ -1,10 +1,10 @@
 <!-- Header -->
 <p align="center">
-  <img src="./assets/banner.svg" width="100%" />
+  <img src="./banner.svg" width="100%" />
 </p>
 
 <p align="center">
-  <img src="./assets/avatar.svg" width="180" />
+  <img src="./avatar.svg" width="180" />
 </p>
 
 <p align="center">
@@ -50,7 +50,7 @@
 
 **⚙️ Skill Confidence**
 
-<img src="./assets/skillbars.svg" width="100%" />
+<img src="./skillbars.svg" width="100%" />
 
 </td>
 </tr>
@@ -59,7 +59,7 @@
 ### 🛤️ My Journey
 
 <p align="center">
-  <img src="./assets/timeline.svg" width="100%" />
+  <img src="./timeline.svg" width="100%" />
 </p>
 
 ### 📜 Certifications
@@ -155,5 +155,5 @@ Python + SQLite hotel management system with full unit test coverage.
 </p>
 
 <p align="center">
-  <img src="./assets/footer.svg" width="100%" />
+  <img src="./footer.svg" width="100%" />
 </p>
