@@ -79,7 +79,7 @@
 **⚡ Binance Futures Trading Bot**
 HMAC-authenticated CLI trading bot with argparse, rotating logs, and unit tests.
 
-<img src="https://github-readme-stats.vercel.app/api/pin/?username=nickk0029&repo=Binance-Futures-Trading-Bot&theme=nord" />
+<img src="https://github-readme-stats.vercel.app/api/pin/?username=nickk0029&repo=trading_bot&theme=nord" />
 
 </td>
 <td valign="top" width="50%">
@@ -97,7 +97,7 @@ TCP/IP socket-based chat app supporting multiple simultaneous clients.
 **🏨 Hotel Management System**
 Python + SQLite hotel management system with full unit test coverage.
 
-<img src="https://github-readme-stats.vercel.app/api/pin/?username=nickk0029&repo=Hotel-Management-System&theme=nord" />
+<img src="https://github-readme-stats.vercel.app/api/pin/?username=nickk0029&repo=hotel-management-system&theme=nord" />
 
 </td>
 <td valign="top" width="50%">
