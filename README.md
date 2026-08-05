@@ -1,6 +1,6 @@
 <!-- Header -->
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=7dd3fc&height=200&section=header&text=Nikhil%20Kumar&fontSize=45&animation=twinkling&fontColor=ffffff" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=7dd3fc&height=200&section=header&text=Nikhil%20Joshi&fontSize=45&animation=twinkling&fontColor=ffffff" />
 </p>
 
 <p align="center">
