@@ -1,0 +1,117 @@
+<svg width="1200" height="260" viewBox="0 0 1200 260" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#060a14">
+        <animate attributeName="stop-color" values="#060a14;#0a1330;#060a14" dur="8s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" stop-color="#0d1b3a">
+        <animate attributeName="stop-color" values="#0d1b3a;#122a52;#0d1b3a" dur="8s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#060a14">
+        <animate attributeName="stop-color" values="#060a14;#0a1330;#060a14" dur="8s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <radialGradient id="glowCyan" cx="30%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#7dd3fc" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#7dd3fc" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowPurple" cx="75%" cy="70%" r="55%">
+      <stop offset="0%" stop-color="#a78bfa" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#a78bfa" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="45%" stop-color="#bff0ff"/>
+      <stop offset="100%" stop-color="#7dd3fc"/>
+    </linearGradient>
+    <linearGradient id="subGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#a78bfa"/>
+      <stop offset="50%" stop-color="#7dd3fc"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7dd3fc" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#7dd3fc" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#a78bfa" stop-opacity="0"/>
+    </linearGradient>
+
+    <filter id="glowFilter" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="6" stdDeviation="7" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="260" fill="url(#bgGrad)"/>
+  <rect width="1200" height="260" fill="url(#glowCyan)"/>
+  <rect width="1200" height="260" fill="url(#glowPurple)"/>
+
+  <g stroke="#7dd3fc" stroke-opacity="0.08" stroke-width="1">
+    <line x1="0" y1="40" x2="1200" y2="40"/>
+    <line x1="0" y1="220" x2="1200" y2="220"/>
+    <line x1="100" y1="0" x2="100" y2="260"/>
+    <line x1="1100" y1="0" x2="1100" y2="260"/>
+  </g>
+
+  <g fill="#7dd3fc">
+    <circle cx="150" cy="60" r="3" opacity="0.7">
+      <animate attributeName="cy" values="60;40;60" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1080" cy="70" r="2.5" opacity="0.6" fill="#a78bfa">
+      <animate attributeName="cy" values="70;95;70" dur="5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="220" cy="200" r="2" opacity="0.5">
+      <animate attributeName="cy" values="200;180;200" dur="6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="980" cy="195" r="3" opacity="0.6" fill="#a78bfa">
+      <animate attributeName="cy" values="195;215;195" dur="4.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="60" cy="150" r="2" opacity="0.5">
+      <animate attributeName="cx" values="60;85;60" dur="7s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1140" cy="160" r="2.5" opacity="0.6" fill="#a78bfa">
+      <animate attributeName="cx" values="1140;1115;1140" dur="6.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <g transform="translate(120,110)" opacity="0.9">
+    <polygon points="0,20 30,5 60,20 30,35" fill="#a78bfa" opacity="0.85"/>
+    <polygon points="0,20 30,35 30,65 0,50" fill="#7dd3fc" opacity="0.7"/>
+    <polygon points="60,20 30,35 30,65 60,50" fill="#38a3d1" opacity="0.85"/>
+    <animateTransform attributeName="transform" type="translate" values="120,110;120,100;120,110" dur="5s" repeatCount="indefinite" additive="sum"/>
+  </g>
+  <g transform="translate(1010,95)" opacity="0.85">
+    <polygon points="0,16 24,4 48,16 24,28" fill="#7dd3fc" opacity="0.8"/>
+    <polygon points="0,16 24,28 24,52 0,40" fill="#a78bfa" opacity="0.6"/>
+    <polygon points="48,16 24,28 24,52 48,40" fill="#5eb8dd" opacity="0.8"/>
+    <animateTransform attributeName="transform" type="translate" values="1010,95;1010,108;1010,95" dur="6s" repeatCount="indefinite" additive="sum"/>
+  </g>
+
+  <g font-family="Verdana, Arial, sans-serif" font-weight="700" text-anchor="middle">
+    <text x="600" y="128" font-size="66" fill="#050a14">Nikhil Joshi</text>
+    <text x="600" y="126" font-size="66" fill="#0d1b32">Nikhil Joshi</text>
+    <text x="600" y="124" font-size="66" fill="#173562">Nikhil Joshi</text>
+    <text x="600" y="120" font-size="66" fill="url(#textGrad)" filter="url(#softShadow)">Nikhil Joshi</text>
+  </g>
+
+  <g font-family="Verdana, Arial, sans-serif" font-weight="600" text-anchor="middle">
+    <text x="600" y="176" font-size="24" fill="#050a14">Aspiring SDE &#8226; Backend Developer</text>
+    <text x="600" y="174" font-size="24" fill="url(#subGrad)" filter="url(#softShadow)">Aspiring SDE &#8226; Backend Developer</text>
+  </g>
+
+  <rect x="400" y="200" width="400" height="3" fill="url(#lineGrad)" filter="url(#glowFilter)">
+    <animate attributeName="width" values="0;400;400" dur="1.6s" fill="freeze"/>
+    <animate attributeName="x" values="600;400;400" dur="1.6s" fill="freeze"/>
+  </rect>
+
+  <text x="600" y="232" font-family="Consolas, Menlo, monospace" font-size="15" fill="#7dd3fc" opacity="0.75" text-anchor="middle">
+    &lt;/&gt; Python &#183; C++ &#183; SQL &#183; React &#183; Node.js
+  </text>
+</svg>

@@ -1,0 +1,66 @@
+<svg width="1100" height="220" viewBox="0 0 1100 220" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="nodeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7dd3fc"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="lineGradT" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7dd3fc" stop-opacity="0.2"/>
+      <stop offset="50%" stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#7dd3fc" stop-opacity="0.2"/>
+    </linearGradient>
+    <filter id="nodeShadow" x="-60%" y="-60%" width="220%" height="220%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+    <filter id="nodeGlow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    text { font-family: Verdana, Arial, sans-serif; }
+    .year { fill: #7dd3fc; font-size: 14px; font-weight: 700; }
+    .title { fill: #f0f9ff; font-size: 16px; font-weight: 700; }
+    .desc { fill: #9fb3c8; font-size: 12px; }
+  </style>
+
+  <rect width="1100" height="220" fill="#060a14"/>
+  <line x1="60" y1="110" x2="1040" y2="110" stroke="url(#lineGradT)" stroke-width="3"/>
+
+  <!-- Node 1 -->
+  <g transform="translate(120,110)">
+    <circle r="10" fill="url(#nodeGrad)" filter="url(#nodeGlow)"/>
+    <circle r="10" fill="none" stroke="#060a14" stroke-width="2"/>
+    <text x="0" y="-30" text-anchor="middle" class="year">2022</text>
+    <text x="0" y="-10" text-anchor="middle" class="title">Started B.E. CSE</text>
+    <text x="0" y="34" text-anchor="middle" class="desc">Chandigarh University</text>
+  </g>
+
+  <!-- Node 2 -->
+  <g transform="translate(400,110)">
+    <circle r="10" fill="url(#nodeGrad)" filter="url(#nodeGlow)"/>
+    <circle r="10" fill="none" stroke="#060a14" stroke-width="2"/>
+    <text x="0" y="34" text-anchor="middle" class="year">Teleperformance</text>
+    <text x="0" y="54" text-anchor="middle" class="title" font-size="14">Operations Customer Expert</text>
+    <text x="0" y="-14" text-anchor="middle" class="desc">Client-facing ops experience</text>
+  </g>
+
+  <!-- Node 3 -->
+  <g transform="translate(680,110)">
+    <circle r="10" fill="url(#nodeGrad)" filter="url(#nodeGlow)"/>
+    <circle r="10" fill="none" stroke="#060a14" stroke-width="2"/>
+    <text x="0" y="-30" text-anchor="middle" class="year">Freelancing</text>
+    <text x="0" y="-10" text-anchor="middle" class="title">Web &amp; Mobile Dev Projects</text>
+    <text x="0" y="34" text-anchor="middle" class="desc">Freelancer.com</text>
+  </g>
+
+  <!-- Node 4 -->
+  <g transform="translate(970,110)">
+    <circle r="12" fill="url(#nodeGrad)" filter="url(#nodeGlow)"/>
+    <circle r="12" fill="none" stroke="#060a14" stroke-width="2"/>
+    <text x="0" y="34" text-anchor="middle" class="year">2026 &#8594; Now</text>
+    <text x="0" y="54" text-anchor="middle" class="title" font-size="14">Graduated &amp; Job Hunting</text>
+    <text x="0" y="-14" text-anchor="middle" class="desc">Targeting SDE roles</text>
+  </g>
+</svg>

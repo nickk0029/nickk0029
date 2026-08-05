@@ -1,0 +1,73 @@
+<svg width="700" height="330" viewBox="0 0 700 330" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="barGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7dd3fc"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="trackGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0f1b33"/>
+      <stop offset="100%" stop-color="#0a1424"/>
+    </linearGradient>
+    <filter id="barShadow" x="-20%" y="-40%" width="140%" height="200%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+    <filter id="barGlow" x="-30%" y="-60%" width="160%" height="260%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    text { font-family: Verdana, Arial, sans-serif; }
+    .label { fill: #e6f7ff; font-size: 16px; font-weight: 600; }
+    .pct { fill: #7dd3fc; font-size: 14px; font-weight: 700; }
+  </style>
+
+  <!-- Python 90% -->
+  <text x="10" y="24" class="label">Python</text>
+  <text x="660" y="24" class="pct" text-anchor="end">90%</text>
+  <rect x="10" y="34" width="650" height="16" rx="8" fill="url(#trackGrad)" filter="url(#barShadow)"/>
+  <rect x="10" y="34" width="585" height="16" rx="8" fill="url(#barGrad)" filter="url(#barGlow)">
+    <animate attributeName="width" from="0" to="585" dur="1.2s" fill="freeze"/>
+  </rect>
+
+  <!-- C++ 75% -->
+  <text x="10" y="76" class="label">C++ / C</text>
+  <text x="660" y="76" class="pct" text-anchor="end">75%</text>
+  <rect x="10" y="86" width="650" height="16" rx="8" fill="url(#trackGrad)" filter="url(#barShadow)"/>
+  <rect x="10" y="86" width="488" height="16" rx="8" fill="url(#barGrad)" filter="url(#barGlow)">
+    <animate attributeName="width" from="0" to="488" dur="1.2s" fill="freeze"/>
+  </rect>
+
+  <!-- SQL / DB 82% -->
+  <text x="10" y="128" class="label">SQL &amp; Databases</text>
+  <text x="660" y="128" class="pct" text-anchor="end">82%</text>
+  <rect x="10" y="138" width="650" height="16" rx="8" fill="url(#trackGrad)" filter="url(#barShadow)"/>
+  <rect x="10" y="138" width="533" height="16" rx="8" fill="url(#barGrad)" filter="url(#barGlow)">
+    <animate attributeName="width" from="0" to="533" dur="1.2s" fill="freeze"/>
+  </rect>
+
+  <!-- DSA 78% -->
+  <text x="10" y="180" class="label">Data Structures &amp; Algorithms</text>
+  <text x="660" y="180" class="pct" text-anchor="end">78%</text>
+  <rect x="10" y="190" width="650" height="16" rx="8" fill="url(#trackGrad)" filter="url(#barShadow)"/>
+  <rect x="10" y="190" width="507" height="16" rx="8" fill="url(#barGrad)" filter="url(#barGlow)">
+    <animate attributeName="width" from="0" to="507" dur="1.2s" fill="freeze"/>
+  </rect>
+
+  <!-- React/Node 65% -->
+  <text x="10" y="232" class="label">React.js &amp; Node.js</text>
+  <text x="660" y="232" class="pct" text-anchor="end">65%</text>
+  <rect x="10" y="242" width="650" height="16" rx="8" fill="url(#trackGrad)" filter="url(#barShadow)"/>
+  <rect x="10" y="242" width="423" height="16" rx="8" fill="url(#barGrad)" filter="url(#barGlow)">
+    <animate attributeName="width" from="0" to="423" dur="1.2s" fill="freeze"/>
+  </rect>
+
+  <!-- Django/FastAPI 60% -->
+  <text x="10" y="284" class="label">Django / FastAPI</text>
+  <text x="660" y="284" class="pct" text-anchor="end">60%</text>
+  <rect x="10" y="294" width="650" height="16" rx="8" fill="url(#trackGrad)" filter="url(#barShadow)"/>
+  <rect x="10" y="294" width="390" height="16" rx="8" fill="url(#barGrad)" filter="url(#barGlow)">
+    <animate attributeName="width" from="0" to="390" dur="1.2s" fill="freeze"/>
+  </rect>
+</svg>

@@ -1,0 +1,55 @@
+<svg width="1200" height="150" viewBox="0 0 1200 150" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradF" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1b3a"/>
+      <stop offset="100%" stop-color="#060a14"/>
+    </linearGradient>
+    <radialGradient id="glowF" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#7dd3fc" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#7dd3fc" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="textGradF" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#a78bfa"/>
+      <stop offset="50%" stop-color="#bff0ff"/>
+      <stop offset="100%" stop-color="#7dd3fc"/>
+    </linearGradient>
+    <linearGradient id="lineGradF" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7dd3fc" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#7dd3fc" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#a78bfa" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="softShadowF" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+    <filter id="glowFilterF" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="150" fill="url(#bgGradF)"/>
+  <rect width="1200" height="150" fill="url(#glowF)"/>
+
+  <rect x="450" y="42" width="300" height="2.5" fill="url(#lineGradF)" filter="url(#glowFilterF)"/>
+
+  <g fill="#7dd3fc">
+    <circle cx="200" cy="45" r="2.5" opacity="0.6">
+      <animate attributeName="cy" values="45;30;45" dur="4.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1000" cy="100" r="2.5" opacity="0.6" fill="#a78bfa">
+      <animate attributeName="cy" values="100;115;100" dur="5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <g font-family="Verdana, Arial, sans-serif" font-weight="700" text-anchor="middle">
+    <text x="600" y="90" font-size="28" fill="#050a14">Thanks for stopping by</text>
+    <text x="600" y="88" font-size="28" fill="url(#textGradF)" filter="url(#softShadowF)">Thanks for stopping by</text>
+  </g>
+
+  <text x="600" y="122" font-family="Consolas, Menlo, monospace" font-size="13" fill="#7dd3fc" opacity="0.7" text-anchor="middle">
+    Let's build something &#8212; nickk0029
+  </text>
+</svg>
