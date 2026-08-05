@@ -4,7 +4,7 @@
 </p>
 
 <p align="center">
-  <img src="./avatar.svg" width="180" />
+  <img src="./photo_avatar.png" width="220" />
 </p>
 
 <p align="center">
