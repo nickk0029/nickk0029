@@ -1,0 +1,23 @@
+<svg width="1200" height="140" viewBox="0 0 1200 140" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#111c33"/>
+      <stop offset="100%" stop-color="#0b1220"/>
+    </linearGradient>
+    <linearGradient id="textGrad2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#e6f7ff"/>
+      <stop offset="100%" stop-color="#7dd3fc"/>
+    </linearGradient>
+    <filter id="softShadow2" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="140" fill="url(#bg2)"/>
+
+  <g font-family="Verdana, Arial, sans-serif" font-weight="700" text-anchor="middle">
+    <text x="600" y="80" font-size="30" fill="#0a1626">Thanks for stopping by</text>
+    <text x="600" y="78" font-size="30" fill="#12294a">Thanks for stopping by</text>
+    <text x="600" y="76" font-size="30" fill="url(#textGrad2)" filter="url(#softShadow2)">Thanks for stopping by</text>
+  </g>
+</svg>
